@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Lucas Santos — Full Stack Developer. Criando experiências web modernas com código limpo e design elegante.">
+  <title>Lucas Santos — Full Stack Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">LS<span class="accent">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#skills" class="nav-link">Stack</a></li>
+        <li><a href="#projetos" class="nav-link">Projetos</a></li>
+        <li><a href="#contato" class="nav-link">Contato</a></li>
+        <li class="nav-cta-mobile"><a href="#contato" class="btn btn-primary">Hire Me</a></li>
+      </ul>
+      <a href="#contato" class="btn btn-nav">Me encontre</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="container hero-container">
+
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Disponível para novos projetos
+        </div>
+        <p class="hero-greeting">Olá, eu sou</p>
+        <h1 class="hero-name">Lucas<br>Santos<span class="accent">.</span></h1>
+        <div class="hero-role">
+          <span class="role-dash">—</span>
+          <span id="typewriter" class="typewriter-text"></span><span class="cursor">|</span>
+        </div>
+        <p class="hero-description">
+          Desenvolvedor Full Stack apaixonado por criar experiências digitais que combinam
+          performance, design e código limpo. Transformando ideias em produtos reais.
+        </p>
+        <div class="hero-actions">
+          <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+          <a href="#contato" class="btn btn-outline">Entre em Contato</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="code-card">
+          <div class="code-card-header">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="code-filename">developer.ts</span>
+          </div>
+          <pre class="code-body"><code><span class="ck">const</span> <span class="cv">developer</span> = {
+  <span class="cp">name</span>:     <span class="cs">"Lucas Santos"</span>,
+  <span class="cp">role</span>:     <span class="cs">"Full Stack Dev"</span>,
+  <span class="cp">location</span>: <span class="cs">"Brasil 🇧🇷"</span>,
+  <span class="cp">status</span>:   <span class="cs">"open to work ✓"</span>,
+
+  <span class="cp">stack</span>: [
+    <span class="cs">"React"</span>,  <span class="cs">"Node.js"</span>,
+    <span class="cs">"TypeScript"</span>, 
+    <span class="cs">"PostgreSQL"</span>,
+  ],
+
+  <span class="cp">focus</span>: <span class="cs">"clean code"</span>,
+  <span class="cp">passion</span>: <span class="cs">"great UX"</span>,
+};</code></pre>
+        </div>
+      </div>
+
+    </div>
+    <div class="scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line-anim"></div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="section">
+    <div class="container">
+      <div class="section-header animate-up">
+        <span class="section-tag">01 — Sobre Mim</span>
+        <h2 class="section-title">Construindo com <span class="accent">propósito</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text animate-up" style="--delay: 0.1s">
+          <p class="about-lead">
+            Sou um desenvolvedor Full Stack focado em criar aplicações web modernas,
+            performáticas e escaláveis, do frontend ao backend.
+          </p>
+          <p>
+            Minha trajetória é marcada pelo aprendizado contínuo. Acompanho de perto o
+            ecossistema JavaScript, boas práticas de engenharia de software e as tendências
+            do mercado tech. Acredito que código limpo e bem estruturado é tão importante
+            quanto um produto que simplesmente funciona.
+          </p>
+          <p>
+            Atualmente aberto a oportunidades que envolvam desafios técnicos reais,
+            times colaborativos e produtos com impacto no mundo real.
+          </p>
+          <div class="about-actions">
+            <a href="#" class="btn btn-primary">Download CV</a>
+            <a href="#projetos" class="btn btn-ghost">Ver projetos →</a>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card animate-up" style="--delay: 0.15s">
+            <span class="stat-number">1<span class="accent">+</span></span>
+            <span class="stat-label">Ano de Experiência</span>
+          </div>
+          <div class="stat-card animate-up" style="--delay: 0.2s">
+            <span class="stat-number">5<span class="accent">+</span></span>
+            <span class="stat-label">Projetos Profissionais</span>
+          </div>
+          <div class="stat-card animate-up" style="--delay: 0.25s">
+            <span class="stat-number">10<span class="accent">+</span></span>
+            <span class="stat-label">Tecnologias</span>
+          </div>
+          <div class="stat-card animate-up" style="--delay: 0.3s">
+            <span class="stat-number">∞</span>
+            <span class="stat-label">Cafés Tomados</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header animate-up">
+        <span class="section-tag">02 — Stack</span>
+        <h2 class="section-title">Tecnologias que <span class="accent">domino</span></h2>
+      </div>
+
+      <div class="skills-wrapper">
+
+        <div class="skill-group animate-up" style="--delay: 0.05s">
+          <h3 class="group-label">Frontend</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React"
+                class="skill-icon">
+              <span>React</span>
+            </div>
+            <div class="skill-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                alt="TypeScript" class="skill-icon">
+              <span>TypeScript</span>
+            </div>
+            <div class="skill-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                alt="JavaScript" class="skill-icon">
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                alt="Tailwind CSS" class="skill-icon">
+              <span>Tailwind CSS</span>
+            </div>
+            <div class="skill-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5"
+                class="skill-icon">
+              <span>HTML5</span>
+            </div>
+            <div class="skill-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3"
+                class="skill-icon">
+              <span>CSS3</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group animate-up" style="--delay: 0.1s">
+          <h3 class="group-label">Backend & Database</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+                alt="Node.js" class="skill-icon">
+              <span>Node.js</span>
+            </div>
+            <div class="skill-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+                alt="Express" class="skill-icon skill-invert">
+              <span>Express</span>
+            </div>
+            <div class="skill-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+                alt="PostgreSQL" class="skill-icon">
+              <span>PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group animate-up" style="--delay: 0.15s">
+          <h3 class="group-label">Tools & DevOps</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git"
+                class="skill-icon">
+              <span>Git</span>
+            </div>
+
+            <div class="skill-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma"
+                class="skill-icon">
+              <span>Figma</span>
+            </div>
+            <div class="skill-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                alt="GitHub" class="skill-icon skill-invert">
+              <span>GitHub</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projetos" class="section">
+    <div class="container">
+      <div class="section-header animate-up">
+        <span class="section-tag">03 — Projetos</span>
+        <h2 class="section-title">Trabalho <span class="accent">selecionado</span></h2>
+      </div>
+
+      <div class="projects-wip animate-up" style="--delay: 0.1s">
+        <div class="wip-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
+            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+            <path d="M2 17l10 5 10-5" />
+            <path d="M2 12l10 5 10-5" />
+          </svg>
+        </div>
+        <h3 class="wip-title">Em desenvolvimento</h3>
+        <p class="wip-desc">Os projetos estão sendo preparados e em breve estarão disponíveis aqui.</p>
+      </div>
+
+      <div class="projects-cta animate-up" style="--delay: 0.25s">
+        <a href="https://github.com" target="_blank" class="btn btn-outline">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+          </svg>
+          Ver todos no GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="section section-alt">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="section-header animate-up" style="text-align: center; max-width: 560px; margin: 0 auto 56px;">
+          <span class="section-tag">04 — Contato</span>
+          <h2 class="section-title">Vamos trabalhar <span class="accent">juntos?</span></h2>
+          <p class="contact-lead">
+            Aberto a oportunidades de emprego, projetos freelance e colaborações.
+            Se você tem algo interessante, me manda uma mensagem.
+          </p>
+        </div>
+
+        <div class="contact-cards">
+          <a href="mailto:lucasgabriel4706@gmail.com" class="contact-card animate-up" style="--delay: 0.1s">
+            <div class="cc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </div>
+            <div class="cc-info">
+              <span class="cc-label">E-mail</span>
+              <span class="cc-value">lucasgabriel4706@gmail.com</span>
+            </div>
+            <svg class="cc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+
+          <a href="https://www.linkedin.com/in/lucas-santos-288511208/" target="_blank" class="contact-card animate-up"
+            style="--delay: 0.15s">
+            <div class="cc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </div>
+            <div class="cc-info">
+              <span class="cc-label">LinkedIn</span>
+              <span class="cc-value">Lucas Santos</span>
+            </div>
+            <svg class="cc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+
+          <a href="https://github.com/lucasGaabe4706" target="_blank" class="contact-card animate-up"
+            style="--delay: 0.2s">
+            <div class="cc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+              </svg>
+            </div>
+            <div class="cc-info">
+              <span class="cc-label">GitHub</span>
+              <span class="cc-value">lucasGaabe4706</span>
+            </div>
+            <svg class="cc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">LS<span class="accent">.</span></span>
+      <span class="footer-copy">© 2026 Lucas Santos. Feito com dedicação.</span>
+      <a href="#hero" class="footer-top">↑ Topo</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
