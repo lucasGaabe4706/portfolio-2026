@@ -156,6 +156,78 @@ const skillObserver = new IntersectionObserver(
 document.querySelectorAll('.skill-group').forEach(g => skillObserver.observe(g));
 
 /* ============================================================
+   HUBOS MODALS
+   ============================================================ */
+
+const DEMO_URL = 'https://hub-de-vendas-five.vercel.app';
+
+const modalDemo  = document.getElementById('modal-demo');
+const modalSobre = document.getElementById('modal-sobre');
+
+function openModal(modal) {
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal(modal) {
+  modal.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function closeAll() {
+  closeModal(modalDemo);
+  closeModal(modalSobre);
+}
+
+// Abrir demo modal
+document.getElementById('btn-hubos-demo')
+  .addEventListener('click', () => openModal(modalDemo));
+
+// Abrir sobre modal
+document.getElementById('btn-hubos-sobre')
+  .addEventListener('click', () => openModal(modalSobre));
+
+// X fechar modais
+document.getElementById('modal-demo-close')
+  .addEventListener('click', () => closeModal(modalDemo));
+document.getElementById('modal-sobre-close')
+  .addEventListener('click', () => closeModal(modalSobre));
+
+// "Ler Sobre" no modal de aviso → abre modal Sobre
+document.getElementById('modal-demo-sobre').addEventListener('click', () => {
+  closeModal(modalDemo);
+  openModal(modalSobre);
+});
+
+// "Prosseguir" → abre demo e fecha modal
+document.getElementById('modal-demo-prosseguir').addEventListener('click', () => {
+  window.open(DEMO_URL, '_blank', 'noopener');
+  closeModal(modalDemo);
+});
+
+// "Ver Demonstração" no modal Sobre
+document.getElementById('modal-sobre-demo').addEventListener('click', () => {
+  closeModal(modalSobre);
+  openModal(modalDemo);
+});
+
+// "Fechar" no modal Sobre
+document.getElementById('modal-sobre-fechar')
+  .addEventListener('click', () => closeModal(modalSobre));
+
+// Fechar clicando fora do modal
+[modalDemo, modalSobre].forEach(overlay => {
+  overlay.addEventListener('click', e => {
+    if (e.target === overlay) closeAll();
+  });
+});
+
+// Fechar com Esc
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeAll();
+});
+
+/* ============================================================
    FOOTER — current year
    ============================================================ */
 

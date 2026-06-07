@@ -250,16 +250,35 @@
         <h2 class="section-title">Trabalho <span class="accent">selecionado</span></h2>
       </div>
 
-      <div class="projects-wip animate-up" style="--delay: 0.1s">
-        <div class="wip-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
-            <path d="M12 2L2 7l10 5 10-5-10-5z" />
-            <path d="M2 17l10 5 10-5" />
-            <path d="M2 12l10 5 10-5" />
-          </svg>
-        </div>
-        <h3 class="wip-title">Em desenvolvimento</h3>
-        <p class="wip-desc">Os projetos estão sendo preparados e em breve estarão disponíveis aqui.</p>
+      <div class="projects-single">
+
+        <article class="project-card project-featured animate-up" style="--delay: 0.1s">
+          <div class="project-visual project-visual-hubos">
+            <div class="hubos-logo-wrap">
+              <svg viewBox="0 0 158 40" xmlns="http://www.w3.org/2000/svg" fill="none" class="hubos-logo">
+                <circle cx="20" cy="20" r="14" stroke="#818CF8" stroke-width="2"/>
+                <circle cx="20" cy="20" r="5" fill="#818CF8"/>
+                <line x1="20" y1="3"  x2="20" y2="9"  stroke="#818CF8" stroke-width="2" stroke-linecap="round"/>
+                <line x1="20" y1="31" x2="20" y2="37" stroke="#818CF8" stroke-width="2" stroke-linecap="round"/>
+                <line x1="3"  y1="20" x2="9"  y2="20" stroke="#818CF8" stroke-width="2" stroke-linecap="round"/>
+                <line x1="31" y1="20" x2="37" y2="20" stroke="#818CF8" stroke-width="2" stroke-linecap="round"/>
+                <text x="46" y="28" font-family="Inter,ui-sans-serif,system-ui,-apple-system,sans-serif" font-size="22" font-weight="700" fill="#F8FAFC">Hub<tspan fill="#818CF8">OS</tspan></text>
+              </svg>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">HubOS</h3>
+            <p class="project-desc">
+              Versão demonstrativa de uma plataforma real desenvolvida para a AR70, com integração ao SAP Business One.
+              Dados mockados para preservar as informações da empresa.
+            </p>
+            <div class="project-btns">
+              <button class="btn btn-ghost" id="btn-hubos-sobre">Sobre</button>
+              <button class="btn btn-primary" id="btn-hubos-demo">Demonstração</button>
+            </div>
+          </div>
+        </article>
+
       </div>
 
       <div class="projects-cta animate-up" style="--delay: 0.25s">
@@ -351,6 +370,70 @@
       <a href="#hero" class="footer-top">↑ Topo</a>
     </div>
   </footer>
+
+  <!-- MODAL: Aviso antes da demo -->
+  <div class="modal-overlay" id="modal-demo" role="dialog" aria-modal="true" aria-labelledby="modal-demo-title">
+    <div class="modal">
+      <button class="modal-close" id="modal-demo-close" aria-label="Fechar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <div class="modal-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="26" height="26">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="12" y1="8" x2="12" y2="12" stroke-linecap="round"/>
+          <circle cx="12" cy="16" r="0.5" fill="currentColor" stroke-width="1"/>
+        </svg>
+      </div>
+      <h3 class="modal-title" id="modal-demo-title">Antes de entrar...</h3>
+      <p class="modal-text">
+        Recomendo dar uma lida no <strong>Sobre</strong> primeiro — vai te ajudar a entender melhor o que o HubOS faz.
+        Mas fique à vontade para pular direto para a demonstração se preferir.
+      </p>
+      <div class="modal-actions">
+        <button class="btn btn-ghost" id="modal-demo-sobre">Ler Sobre</button>
+        <button class="btn btn-primary" id="modal-demo-prosseguir">Prosseguir</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Sobre o HubOS -->
+  <div class="modal-overlay" id="modal-sobre" role="dialog" aria-modal="true" aria-labelledby="modal-sobre-title">
+    <div class="modal">
+      <button class="modal-close" id="modal-sobre-close" aria-label="Fechar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <div class="modal-logo-wrap">
+        <svg viewBox="0 0 158 40" xmlns="http://www.w3.org/2000/svg" fill="none" width="130" height="33">
+          <circle cx="20" cy="20" r="14" stroke="#818CF8" stroke-width="2"/>
+          <circle cx="20" cy="20" r="5" fill="#818CF8"/>
+          <line x1="20" y1="3"  x2="20" y2="9"  stroke="#818CF8" stroke-width="2" stroke-linecap="round"/>
+          <line x1="20" y1="31" x2="20" y2="37" stroke="#818CF8" stroke-width="2" stroke-linecap="round"/>
+          <line x1="3"  y1="20" x2="9"  y2="20" stroke="#818CF8" stroke-width="2" stroke-linecap="round"/>
+          <line x1="31" y1="20" x2="37" y2="20" stroke="#818CF8" stroke-width="2" stroke-linecap="round"/>
+          <text x="46" y="28" font-family="Inter,ui-sans-serif,system-ui,-apple-system,sans-serif" font-size="22" font-weight="700" fill="#F8FAFC">Hub<tspan fill="#818CF8">OS</tspan></text>
+        </svg>
+      </div>
+      <p class="modal-text" id="modal-sobre-title">
+        O HubOS é uma versão demonstrativa — com dados mockados e produtos fictícios — de uma plataforma real
+        que desenvolvi para a empresa <strong>AR70</strong>.
+        <br><br>
+        O sistema original conta com integração ao ERP <strong>SAP Business One</strong>, múltiplos usuários,
+        controle de autenticação e diversas outras funcionalidades que não puderam ser disponibilizadas
+        por envolverem dados internos da empresa.
+        <br><br>
+        Esta demo existe para mostrar a interface e o funcionamento do sistema de forma fiel,
+        sem expor nenhuma informação real.
+      </p>
+      <div class="modal-actions">
+        <button class="btn btn-ghost" id="modal-sobre-fechar">Fechar</button>
+        <button class="btn btn-primary" id="modal-sobre-demo">Ver Demonstração</button>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
